@@ -2,6 +2,12 @@
 
 :root {
   --box-shadow: 0 5px 8px rgba(0, 0, 0, 0.12), 0 5px 7px rgba(0, 0, 0, 0.24);
+  --primary-color-bg: #27292b;
+  --secondary-color-box: #1A1C1D;
+  --form-color: #373b3d;
+  --btn-color: #373E4A;
+  --border-color: 1px solid #221b1b;
+  --font-color-primary: rgb(158, 154, 154);
 }
 
 * {
@@ -10,8 +16,8 @@
 }
 
 body {
-  background-color: #27292b;
-  color: rgb(158, 154, 154);
+  background-color: var(--primary-color-bg);
+  color: var(--font-color-primary);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -26,7 +32,7 @@ body {
   height: 650px;
   width: 450px;
   padding: 2rem;
-  background-color: #1A1C1D;
+  background-color: var(--secondary-color-box);
   box-shadow: var(--box-shadow);
   border-radius: 1rem;
 }
@@ -44,7 +50,7 @@ h2 {
 }
 
 h3 {
-  border-bottom: 1px solid #373b3d;
+  border-bottom: 1px solid var(--form-color);
   text-align: left;
   padding-bottom: 10px;
   margin: 40px 0 10px;
@@ -57,7 +63,7 @@ h4 {
 }
 
 .inc-exp-container {
-  background-color: #373b3d;
+  background-color: var(--form-color);
   box-shadow: var(--box-shadow);
   border-radius: .7rem;
   padding: 20px;
@@ -72,7 +78,7 @@ h4 {
 }
 
 .inc-exp-container > div:first-of-type {
-  border-right: 1px solid #221b1b;
+  border-right: var(--border-color);
 }
 
 .money {
@@ -96,8 +102,8 @@ label {
 
 input[type='text'],
 input[type='number'] {
-  border: 1px solid #221b1b;
-  background-color: #373b3d;
+  border: var(--border-color);
+  background-color: var(--form-color);
   border-radius: .5rem;
   display: block;
   font-size: 16px;
@@ -108,10 +114,10 @@ input[type='number'] {
 .btn {
   text-align: center;
   cursor: pointer;
-  background-color: #373E4A;
+  background-color: var(--btn-color);
   box-shadow: var(--box-shadow);
   border-radius: .7rem;
-  color: rgb(158, 154, 154);
+  color: var(--font-color-primary);
   border: 0;
   font-size: 16px;
   margin: 10px 0 30px;
@@ -131,7 +137,7 @@ input[type='number'] {
 }
 
 .list li {
-  background-color: #373b3d;
+  background-color: var(--form-color);
   box-shadow: var(--box-shadow);
   border-radius: .5rem;
   color: rgb(158, 154, 154);
