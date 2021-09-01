@@ -29,7 +29,6 @@ body {
 .container {
   text-align: center;
   margin: 2rem auto;
-  height: 650px;
   width: 450px;
   padding: 2rem;
   background-color: var(--secondary-color-box);
